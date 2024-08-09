@@ -22,7 +22,7 @@ Aplicativo desenvolvido como parte de um teste técnico para uma vaga de Desenvo
 ### 1. Clone o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/superfrete-app.git
+git clone https://github.com/sasgustav/superfrete-app.git
 cd superfrete-app
 ```
 
@@ -78,6 +78,10 @@ npm test
 ```
 
 Os testes são executados no modo interativo, permitindo uma depuração rápida e eficiente.
+
+## 👤 Autor
+
+Desenvolvido por [Gustavo Vasconcelos](https://www.linkedin.com/in/gustavo-vasconcelos-software-engineer/), [GitHub](https://github.com/sasgustav).
 
 ## 📄 Licença
 
