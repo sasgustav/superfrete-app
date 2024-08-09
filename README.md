@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# 🚀 SuperFrete App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-17.0.2-61DAFB?logo=react) ![Firebase](https://img.shields.io/badge/Firebase-9.6.1-FFCA28?logo=firebase) ![Capacitor](https://img.shields.io/badge/Capacitor-3.0.2-1195E3?logo=capacitor) ![Android](https://img.shields.io/badge/Android-API%2030-3DDC84?logo=android)
 
-## Available Scripts
+Aplicativo desenvolvido como parte de um teste técnico para uma vaga de Desenvolvedor React Sênior. Este projeto utiliza React.js para a interface do usuário, Firebase Firestore como banco de dados em tempo real e Capacitor para empacotamento e execução no Android.
 
-In the project directory, you can run:
+## 📋 Funcionalidades
 
-### `npm start`
+- **Envio de Mensagens**: Insira uma mensagem no campo de texto e envie-a para o Firestore.
+- **Listagem em Tempo Real**: Exibição das mensagens enviadas em tempo real diretamente da base de dados do Firestore.
+- **Empacotamento para Android**: Aplicação empacotada e executada em dispositivos Android utilizando Capacitor.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [React.js](https://reactjs.org/) - Biblioteca JavaScript para construção de interfaces de usuário.
+- [Firebase Firestore](https://firebase.google.com/docs/firestore) - Banco de dados NoSQL em tempo real.
+- [Capacitor](https://capacitorjs.com/) - Plataforma para criação de aplicações nativas usando tecnologias web.
+- [Android Studio](https://developer.android.com/studio) - IDE oficial para desenvolvimento Android.
 
-### `npm test`
+## 🚀 Como Executar o Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Clone o Repositório
 
-### `npm run build`
+```bash
+git clone https://github.com/seu-usuario/superfrete-app.git
+cd superfrete-app
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Instale as Dependências
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Configuração do Firebase
 
-### `npm run eject`
+- Crie um projeto no [Firebase Console](https://console.firebase.google.com/).
+- Adicione o Firebase ao seu projeto React.
+- Configure as credenciais do Firebase no arquivo `src/firebase/config.js`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 4. Execute a Aplicação
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para rodar a aplicação no modo de desenvolvimento:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para visualizar o aplicativo.
 
-## Learn More
+### 5. Build para Produção
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para criar uma versão otimizada do aplicativo:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run build
+```
 
-### Code Splitting
+### 6. Empacotamento para Android
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Para empacotar a aplicação para Android usando Capacitor:
 
-### Analyzing the Bundle Size
+```bash
+npx cap sync
+npx cap open android
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+No Android Studio, você pode compilar e rodar o APK no emulador ou em um dispositivo físico.
 
-### Making a Progressive Web App
+## 🧪 Testes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Este projeto inclui testes automatizados para garantir a funcionalidade correta dos componentes.
 
-### Advanced Configuration
+### Executar Testes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm test
+```
 
-### Deployment
+Os testes são executados no modo interativo, permitindo uma depuração rápida e eficiente.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📄 Licença
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto é de uso livre para fins de avaliação técnica.
