@@ -10,7 +10,7 @@ const MessageList = ({ messages }) => {
           const timestamp = msg.timestamp instanceof Date
             ? msg.timestamp
             : new Date(msg.timestamp.seconds * 1000);
-          
+
           return (
             <div key={index} className="message-item">
               <p>😁 {msg.text}</p>

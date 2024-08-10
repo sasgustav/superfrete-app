@@ -36,7 +36,7 @@ function App() {
         <img src={logo} alt="SuperFrete Logo" className="logo" />
         <h3>Digite um texto abaixo</h3>
         <TextField value={message} onChange={(e) => setMessage(e.target.value)} />
-        
+
         <button
           onClick={handleSendMessage}
           className={`submit-button ${message.trim() ? 'active' : ''}`}
@@ -49,7 +49,7 @@ function App() {
         {messages.length > 0 && (
           <MessageList messages={messages} />
         )}
-        
+
       </header>
     </div>
   );
