@@ -26,7 +26,7 @@ html,
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
   width: 100%;
   padding: 0px 16px;
   border: solid 1px #ddd;
@@ -68,12 +68,11 @@ h3 {
 .text-field {
   width: 328px;
   height: 56px;
-  padding: 16px 24px;
+  padding: 16px 16px;
   border-radius: 8px;
   border: 1px solid #cccccc;
   font-size: 16px;
   color: #333333;
-  margin-bottom: 16px;
   box-sizing: border-box;
   transition: border-color 0.3s ease;
 }
@@ -178,4 +177,46 @@ h3 {
   font-size: 12px;
   color: #888888;
   margin-top: auto;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.floating-label {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.text-field:focus + .floating-label,
+.floating-label.active {
+  top: 1px;
+  left: 16px;
+  font-size: 12px;
+  color: #0FAE79;
+  opacity: 1;
+}
+
+.text-field {
+  width: 328px;
+  height: 56px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+  font-size: 16px;
+  color: #333333;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.text-field:focus {
+  border-color: #0FAE79;
+  outline: none;
 }
