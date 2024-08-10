@@ -64,18 +64,18 @@ h2 {
   padding: 16px 24px;
   border-radius: 12px;
   border: none;
-  background-color: #0FAE79;
-  color: #ffffff;
+  background-color: #F2F2F2; /* Cor quando desabilitado */
+  color: #9e9e9e; /* Cor do texto quando desabilitado */
   font-size: 16px;
   font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  cursor: not-allowed;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.submit-button:disabled {
-  background-color: #e0e0e0;
-  color: #9e9e9e;
-  cursor: not-allowed;
+.submit-button.active {
+  background-color: #0FAE79; /* Cor ativa */
+  color: #ffffff; /* Cor do texto quando ativo */
+  cursor: pointer;
 }
 
 .message-list {

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { sendMessage, getMessages } from './firebase/firestore';
 import TextField from './components/TextField';
-import SubmitButton from './components/SubmitButton';
 import MessageList from './components/MessageList';
 import logo from './assets/logo.png';
 
@@ -28,7 +27,16 @@ function App() {
         <img src={logo} alt="SuperFrete Logo" className="logo" />
         <h2>Digite um texto abaixo</h2>
         <TextField value={message} onChange={(e) => setMessage(e.target.value)} />
-        <SubmitButton onClick={handleSendMessage} disabled={!message.trim()} />
+        
+        {/* O botão permanece visível, mas é bloqueado quando não há texto */}
+        <button
+          onClick={handleSendMessage}
+          className={`submit-button ${message.trim() ? 'active' : ''}`}
+          disabled={!message.trim()}
+        >
+          Enviar
+        </button>
+        
         <MessageList messages={messages} />
       </header>
     </div>
