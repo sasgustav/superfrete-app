@@ -4,7 +4,7 @@ const MessageList = ({ messages }) => {
   return (
     <div className="message-section">
       <h3>Mensagens enviadas</h3>
-      <div className="message-list">
+      <div className="message-list" role="list" aria-label="Lista de mensagens enviadas">
         {messages.map((msg, index) => {
           // Verifique se o timestamp é um objeto Date ou um objeto Firestore Timestamp
           const timestamp = msg.timestamp instanceof Date
@@ -12,7 +12,7 @@ const MessageList = ({ messages }) => {
             : new Date(msg.timestamp.seconds * 1000);
 
           return (
-            <div key={index} className="message-item">
+            <div key={index} className="message-item" role="listitem">
               <p>😁 {msg.text}</p>
               <span>{timestamp.toLocaleString()}</span>
             </div>

@@ -36,9 +36,13 @@ html,
 }
 
 .logo {
-  margin-top: 40px;
+  margin-top: 57px;
   width: 120px;
-  height: auto;
+  height: 50px;
+  left: 120px;
+  padding: 0px;
+  gap: 0px;
+  opacity: 0px;
 }
 
 h2 {
@@ -48,6 +52,17 @@ h2 {
   margin-top: 160px;
   margin-bottom: 24px;
   text-align: center;
+}
+
+h3 {
+  font-weight: 600;
+  color: #4D4D4D;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: left;
+  font-family: Poppins;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 .text-field {

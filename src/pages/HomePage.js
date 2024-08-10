@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import '../App.css';
 import { sendMessage, getMessages } from '../firebase/firestore';
 import TextField from '../components/TextField';
-import MessageList from '../components/MessageList';
+import MessageList from '../components/messages/MessageList';
 import logo from '../assets/logo.png';
 
-function App() {
+function MainPage() {
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([
     {
@@ -31,28 +31,30 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} alt="SuperFrete Logo" className="logo" />
-        <h3>Digite um texto abaixo</h3>
-        <TextField value={message} onChange={(e) => setMessage(e.target.value)} />
+    <div className="MainPage">
+      <header className="App-header" role="banner">
+        <img src={logo} alt="SuperFrete Logo" className="logo" aria-label="SuperFrete Logo" />
+        <TextField
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          aria-labelledby="text-entry-label"
+        />
 
         <button
           onClick={handleSendMessage}
           className={`submit-button ${message.trim() ? 'active' : ''}`}
           disabled={!message.trim()}
+          aria-disabled={!message.trim()}
         >
           Enviar
         </button>
 
-        {/* Renderiza a lista de mensagens */}
         {messages.length > 0 && (
           <MessageList messages={messages} />
         )}
-
       </header>
     </div>
   );
 }
 
-export default App;
+export default MainPage;
