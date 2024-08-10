@@ -1,3 +1,9 @@
+/*
+ * Copyright (C) 2024 Gustavo Vasconcelos
+ * Este código é propriedade de Gustavo Vasconcelos e está protegido sob leis de copyright.
+ * O uso não autorizado deste código é estritamente proibido.
+ */
+
 import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import './App.css';
