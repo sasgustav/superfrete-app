@@ -136,4 +136,4 @@ Este projeto é de uso livre para fins de avaliação técnica.
 
 ![alt text](image.png)
 
-![alt text](image-1.png)
+![alt text](image-2.png)
