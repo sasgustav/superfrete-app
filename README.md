@@ -131,3 +131,9 @@ Desenvolvido por [Gustavo Vasconcelos](https://www.linkedin.com/in/gustavo-vasco
 ## 📄 Licença
 
 Este projeto é de uso livre para fins de avaliação técnica.
+
+## 🧪 Evidências de teste de desenvolvimento:
+
+![alt text](image.png)
+
+![alt text](image-1.png)
