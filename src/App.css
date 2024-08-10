@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-body, html, #root {
+body,
+html,
+#root {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -13,11 +15,11 @@ body, html, #root {
   align-items: center;
   background-color: #ffffff;
   width: 360px;
-  height: 100%; /* Ajuste para garantir que o layout preencha toda a altura */
+  height: 100%;
   margin: 0 auto;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden; /* Garantir que nada saia do contêiner */
+  overflow: hidden;
 }
 
 .App-header {
@@ -27,12 +29,14 @@ body, html, #root {
   gap: 16px;
   width: 100%;
   padding: 0px 16px;
+  border: solid 1px #ddd;
+  border-radius: 16px;
   box-sizing: border-box;
-  position: relative; /* Para posicionamento absoluto do logo */
+  position: relative;
 }
 
 .logo {
-  margin-top: 40px; /* Ajuste conforme o design */
+  margin-top: 40px;
   width: 120px;
   height: auto;
 }
@@ -41,7 +45,7 @@ h2 {
   font-size: 18px;
   font-weight: 600;
   color: #333333;
-  margin-top: 160px; /* Ajuste para posicionar corretamente */
+  margin-top: 160px;
   margin-bottom: 24px;
   text-align: center;
 }
@@ -115,8 +119,10 @@ h2 {
 
 .message-section {
   height: 100%;
+  border: 1px solid #ddd;
+  border-top: #fff;
   background-color: #F2F2F2;
-  padding: 16px;
+  padding: 15px;
   color: #4D4D4D;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
