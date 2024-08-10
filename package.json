@@ -2,6 +2,7 @@
   "name": "superfrete-app",
   "version": "0.1.0",
   "private": true,
+  "author": "Gustavo Vasconcelos <gustavovasconcelos@gmail.com> (https://www.linkedin.com/in/gustavo-vasconcelos-software-engineer/)",
   "dependencies": {
     "@capacitor/android": "^6.1.2",
     "@capacitor/cli": "^6.1.2",

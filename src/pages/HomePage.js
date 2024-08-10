@@ -1,7 +1,10 @@
-/*
- * Copyright (C) 2024 Gustavo Vasconcelos
- * Este código é propriedade de Gustavo Vasconcelos e está protegido sob leis de copyright.
- * O uso não autorizado deste código é estritamente proibido.
+/**
+ * SuperFrete App
+ * Desenvolvido por Gustavo Vasconcelos
+ * LinkedIn: https://www.linkedin.com/in/gustavo-vasconcelos-software-engineer/
+ * GitHub: https://github.com/sasgustav
+ * 
+ * Este arquivo contém a lógica e o layout da página principal do aplicativo.
  */
 
 import React, { useState, useEffect } from 'react';
