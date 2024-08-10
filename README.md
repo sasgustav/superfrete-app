@@ -5,8 +5,11 @@
 - [Android Studio](https://developer.android.com/studio) - Para empacotamento e execução no Android
 - [Firebase Console](https://console.firebase.google.com/) - Para configurar o Firestore
 
+Aqui está a estrutura de pastas formatada corretamente para o GitHub:
+
 ## 🗂️ Estrutura de Pastas
 
+```
 superfrete-app/
 │
 ├── public/                 # Arquivos públicos, como index.html
@@ -20,6 +23,7 @@ superfrete-app/
 ├── .gitignore              # Arquivos e pastas a serem ignorados pelo Git
 ├── package.json            # Dependências e scripts do projeto
 └── README.md               # Documentação do projeto
+```
 
 ## 🌐 Deploy
 
