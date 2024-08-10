@@ -4,7 +4,6 @@
 - [NPM](https://www.npmjs.com/get-npm) - Normalmente instalado com o Node.js
 - [Android Studio](https://developer.android.com/studio) - Para empacotamento e execução no Android
 - [Firebase Console](https://console.firebase.google.com/) - Para configurar o Firestore
-```
 
 ## 🗂️ Estrutura de Pastas
 
