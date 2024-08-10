@@ -1,6 +1,3 @@
-Aqui está o README completo, incluindo as referências para o autor desenvolvedor:
-
-```markdown
 # 🚀 SuperFrete App
 
 ![React](https://img.shields.io/badge/React-17.0.2-61DAFB?logo=react) ![Firebase](https://img.shields.io/badge/Firebase-9.6.1-FFCA28?logo=firebase) ![Capacitor](https://img.shields.io/badge/Capacitor-3.0.2-1195E3?logo=capacitor) ![Android](https://img.shields.io/badge/Android-API%2030-3DDC84?logo=android)
@@ -134,4 +131,3 @@ Desenvolvido por [Gustavo Vasconcelos](https://www.linkedin.com/in/gustavo-vasco
 ## 📄 Licença
 
 Este projeto é de uso livre para fins de avaliação técnica.
-```
