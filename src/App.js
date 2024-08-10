@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} alt="SuperFrete Logo" className="logo" />
-        <h2>Digite um texto abaixo</h2>
+        <h3>Digite um texto abaixo</h3>
         <TextField value={message} onChange={(e) => setMessage(e.target.value)} />
         
         <button

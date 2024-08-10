@@ -13,10 +13,11 @@ body, html, #root {
   align-items: center;
   background-color: #ffffff;
   width: 360px;
-
+  height: 100%; /* Ajuste para garantir que o layout preencha toda a altura */
   margin: 0 auto;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Garantir que nada saia do contêiner */
 }
 
 .App-header {
@@ -27,10 +28,11 @@ body, html, #root {
   width: 100%;
   padding: 0px 16px;
   box-sizing: border-box;
+  position: relative; /* Para posicionamento absoluto do logo */
 }
 
 .logo {
-  margin-top: 20px;
+  margin-top: 40px; /* Ajuste conforme o design */
   width: 120px;
   height: auto;
 }
@@ -39,7 +41,9 @@ h2 {
   font-size: 18px;
   font-weight: 600;
   color: #333333;
+  margin-top: 160px; /* Ajuste para posicionar corretamente */
   margin-bottom: 24px;
+  text-align: center;
 }
 
 .text-field {
