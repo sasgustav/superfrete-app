@@ -7,7 +7,16 @@ import logo from './assets/logo.png';
 
 function App() {
   const [message, setMessage] = useState('');
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([
+    {
+      text: "Oi esta é a sua mensagem enviada anteriormente.",
+      timestamp: "23/02/2024 - 12h30"
+    },
+    {
+      text: "Oi este é um outro exemplo de mensagem enviada.",
+      timestamp: "23/02/2024 - 12h30"
+    }
+  ]);
 
   useEffect(() => {
     const unsubscribe = getMessages(setMessages);
@@ -36,7 +45,7 @@ function App() {
           Enviar
         </button>
 
-        {/* Renderiza a lista de mensagens somente se houver mensagens */}
+        {/* Renderiza a lista de mensagens */}
         {messages.length > 0 && (
           <MessageList messages={messages} />
         )}

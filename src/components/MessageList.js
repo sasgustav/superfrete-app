@@ -9,7 +9,7 @@ const MessageList = ({ messages }) => {
       <div className="message-list">
         {messages.map((msg, index) => (
           <div key={index} className="message-item">
-            <p><FontAwesomeIcon icon={faSmile} /> {msg.text}</p>
+            <p>😁 {msg.text}</p>
             <span>{new Date(msg.timestamp.seconds * 1000).toLocaleString()}</span>
           </div>
         ))}
