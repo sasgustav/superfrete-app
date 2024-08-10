@@ -28,7 +28,6 @@ function App() {
         <h2>Digite um texto abaixo</h2>
         <TextField value={message} onChange={(e) => setMessage(e.target.value)} />
         
-        {/* O botão permanece visível, mas é bloqueado quando não há texto */}
         <button
           onClick={handleSendMessage}
           className={`submit-button ${message.trim() ? 'active' : ''}`}
@@ -36,8 +35,12 @@ function App() {
         >
           Enviar
         </button>
+
+        {/* Renderiza a lista de mensagens somente se houver mensagens */}
+        {messages.length > 0 && (
+          <MessageList messages={messages} />
+        )}
         
-        <MessageList messages={messages} />
       </header>
     </div>
   );
